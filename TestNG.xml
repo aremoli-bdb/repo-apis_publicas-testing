@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite de pruebas" thread-count="1" parallel="tests">
+
+    <test name="Test CreateObject">
+        <classes>
+            <class name="tests.apisPublicas.CreateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test GetObject">
+        <classes>
+            <class name="tests.apisPublicas.GetObjects"> </class>
+        </classes>
+    </test>
+
+    <test name="Test GetSingleObject">
+        <parameter name="id" value="/2"></parameter>
+        <parameter name="expectedStatusCode" value="200"></parameter>
+        <classes>
+            <class name="tests.apisPublicas.GetSingleObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test UpdateObject">
+        <classes>
+            <class name="tests.apisPublicas.UpdateObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test UpdatePartiallyObject">
+        <classes>
+            <class name="tests.apisPublicas.UpdatePartiallyObject"> </class>
+        </classes>
+    </test>
+
+    <test name="Test DeleteObject">
+        <classes>
+            <class name="tests.apisPublicas.DeleteObject"> </class>
+        </classes>
+    </test>
+
+</suite>
